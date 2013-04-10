@@ -1,0 +1,103 @@
+-------------------------------------------------------------------------------
+XONE:4D Silas' 4tr CTRL (v1.1.0 0702 b006)
+-------------------------------------------------------------------------------
+
+Hello. I'm glad to show you my XONE:4D mapping that I'm using for more than
+a year... or maybe more? :-)
+
+Why it's unique? Please read bellow...
+Everyone has a problem with XONE:4D mapping right?
+Anything you want to do during gig, you need to use key combos all the time.
+
+No more! This basic template shows how to create simple MAGIC button
+on modifiers which changes Traktor view between:
+- AB focused (Deck AB size = maximum and Deck CB size = minimum)
+- CD focused (Deck CD size = maximum and Deck AB size = minimum)
+This feature gives fast access to Deck CD and back to AB by one button press.
+Pressing MAGIC button focus deck side CD or AB and then whole deck side
+is controlled by a MIDI panels.
+
+Mapping explanation on a one panel:
+--------------------------------------------------------------
+[Loop Size/Set**][   nothing   ][   nothing   ][Tempo/Sync***] == Rotary knobs
+
+[    Dry/Wet    ][   Param 1   ][   Param 2   ][   Param 3   ] == Knobs Row 1  [FX1/FX2*]
+
+[    Dry/Wet    ][   Param 1   ][   Param 2   ][   Param 3   ] == Knobs Row 2  [FX3/FX4*]
+
+[    Dry/Wet    ][   Param 1   ][   Param 2   ][   Param 3   ] == Sliders      [FX3/FX4*]
+
+[ All Off FX1/2 ][ Off FX1/2:1 ][ Off FX1/2:2 ][ Off FX1/2:3 ] == Button Row 1
+
+[ All Off FX3/4 ][ Off FX3/4:1 ][ Off FX3/4:2 ][ Off FX3/4:3 ] == Button Row 2
+
+[   Shift****   ][ Browser Max ][   nothing   ][   nothing   ] == Button Row 3
+
+                                               [Dir/Files U/D] == Rotary
+
+[ ------------------------- Pitch -------------------------- ] == JOG
+
+[      Play     ][     CUP     ][    LOAD     ][Switch AB<>CD] == Pipes Button
+[ Deck A/B Play ][             ][Deck C/D Play][             ] == Pipes LED
+--------------------------------------------------------------
+
+     * FX N depends on a panel side: 1+3 on a left and 2+4 on right.
+	   Support Advanced and Group Effects
+    ** When Loop is set and active during track playback, then LED pipe for
+	   play indication will blink.
+   *** Sync only triggers Sync to synchronize Tempo to Master clock.
+       Sync cannot be enabled/disabled.
+  **** Use Shift with Pitch(Jog) to "seek" track position - useses Beat Move
+  function.
+
+Edit it as you wish. An idea is to simply create multi layered controls
+with easy access to all functions you need.
+
+------------------- -----------------------------------------------------------
+!!!!!! UPDATE: 0702 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+------------------- -----------------------------------------------------------
+     * Added Wavefrom adjust on rotary on top
+	 * Tempo Sync + Left Shift  = Phase Sync
+     * Tempo Sync + Right Shift = Sync On 
+	 * Reset BPM and with Autogrid with Shift
+	 * Beat Tap
+	 
+	!* Shift + Filter On/Off == On/Off FX1+FX3 Dry Wet Control with Filter knob
+------------------- -----------------------------------------------------------
+	
+Enjoy!
+-------------------------------------------------------------------------------
+Shifted Object Deposit, SOD
+“The shift that has been recognised recently in the field of art from
+establishing relations between objects towards establishing relations between
+subjects is not the result of an overnight turn, as it may seem at first sight”
+Blog: http://blog.shiftedobjectdeposit.pl
+
+...................... mixsets ................................................
+- Enigmatic as SOD, Shifted Object Deposit, EXPy: http://i.mixcloud.com/CBvcFV
+
+- The SOD founder Enigmatic Beginning Intro, mix: http://snd.sc/XshR2c
+                                                  http://i.mixcloud.com/CBrKNl
+
+- Enigmatic=Untitled Guy SOD#003 1min video clip: http://vimeo.com/49511555
+                                                  http://youtu.be/5X_PeoQYIXI
+
+- David Late, Untitled SOD#003 rave n8... mixset: http://i.mixcloud.com/CBqDOG
+
+                Conrad SOD#003 rave n8... mixset: http://i.mixcloud.com/CBqALM
+
+          Untitled Guy SOD#003 rave n8... mixset: http://snd.sc/QUl34T
+                                                  http://i.mixcloud.com/CBjwbJ
+
+          Untitled Guy SOD#001 rave n8... mixset: http://snd.sc/Omdy0i
+                                                  http://i.mixcloud.com/CBjwGb
+
+Facebook: http://fb.me/SftObjDep | http://fb.me/ShiftedObjectDeposit
+Beatport: http://btprt.dj/NWRXS6
+RA: http://bit.ly/SOD-ra-DJ
+-------------------------------------------------------------------------------
+Web: http://blog.shiftedobjectdeposit.pl
+-------------------------------------------------------------------------------
+
+Unknown Id or Enigmatic and unnamed SOD founder, also known as Untitled Guy,
+silas [-_-] shiftedobjectdeposit.pl
