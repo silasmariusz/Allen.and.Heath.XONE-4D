@@ -1,0 +1,187 @@
+
+
+
+
+            XONE:4D and FX unit w/ Dry-Wet fader on a Cross Fader
+
+
+                  2010 Silas Mariusz, Shifted Object Deposit
+                     silas [-_-] shiftedobjectdeposit.pl
+
+                 web site http://blog.shiftedobjectdeposit.pl
+
+
+
+
+
+
+  INTRODUCTION
+---------------------------------------------------------------------------//
+I was experiencing with external FX unit and I found a simple to way to use
+it on 4th channel on XONE:4D mixer and set Cross-Fader to be Dry/Wet control
+of the applied FX.
+
+Here is how I done this, but first please read important things about FX.
+If you know how FX loops works then skip next part and go to the SETUP part.
+
+
+
+
+
+  HOW FX LOOPS WORKS
+---------------------------------------------------------------------------//
+Every external FX unit like Korg Kaoss Pad 3 and Pioneer or any other,
+works in two modes Parallel(SEND/RETURN) or Serial(DIRECT).
+
+To understand the difference between these two, you need to know how
+FX LOOPS works.
+
+
+
+  --------  I.   SERIAL FX - mode
+  --------------------------------------------------------------------
+  The serial loop is a simple main signal SEND/RETURN to the output unit.
+  It is sometimes with level controls, to let you adapt the signal level,
+  because in a DJ setups, the signal mainly returns from the FX unit
+  to to the preamp stage directly.
+
+  There are two ways of connection FX unit in direct mode to XONE:4D:
+
+  1)                                 [mode:DIRECT]
+  >-----------------------------------------|-----------------------------/ /-
+          mixer: Main Output  >>>  -(in)FX unit(out)-  >>>  Preamp        //
+ //-----------------------------------------------------------------------/__
+   +---// whole main signal is processed
+
+   cons: - needs to monitor volume levels to prevent clipping
+         - sound quality in common cases is worst
+         - you are unable to record sound from internal bus
+
+
+  2)                                [mode:DIRECT]
+  >---------------------------------------|-------------------------------/ /-
+     mixer: CH[POST] FX-send >>> -(in)FX unit(out)- >>> mixer: FX-return   /
+ //-----------------------------------------------------------------------/__
+   +---// all channels signals are processed seperatly and returns
+          to the mixer
+
+   cons: - needs to monitor volume levels to prevent clipping
+         - sound quality in common cases is worst
+
+   diagram: http://shiftedobjectdeposit.pl/technical/xone4d.fx/alt.gif
+
+   NOTE: This type simply breaks the signal out from the preamp stage,
+   runs it through any effects you connect (CH [POST] SEND >>> (in)FX unit)
+   and then returns it to the amp (FX unit(out) >>> mixer: FX-return)
+   to pass it on to the power amp stage.
+
+
+
+  --------  II.  PARALLEL FX - mode
+  --------------------------------------------------------------------
+  The parallel loop taps off a little signal to the "send" jack, and whatever
+  comes back through the "return" jack is then added to the original signal
+  (sometimes using a "mix" control).
+
+  diagram: http://shiftedobjectdeposit.pl/technical/xone4d.fx/std.gif
+
+
+
+  --------  III. Difference between SERIAL and PARALLEL setup
+  --------------------------------------------------------------------
+ *Serial/series loops* are useful for effects that you want to
+  apply to the _whole signal_ (equalizer, boost, gater, slicer, pitch, etc),
+
+  ... whereas   *Parallel loops*   work great for effects you want to _ADD_
+  to the signal (delay, reverb, chorus etc).
+
+
+
+
+
+  SETUP - Use Direct FX Mode (full processing) FX on Send/Return bus
+---------------------------------------------------------------------------//
+
+
+  --------  I.   CONNECTION
+  --------------------------------------------------------------------
+  (2xRCA) XONE:4D FX1 Send   >>>   FX unit Line In
+  (2xRCA) FX unit Line Out   >>>   XONE:4D CH4 Line Input
+
+
+  --------  II.  SETTINGS
+  --------------------------------------------------------------------
+  Set FX unit connection type to "DIRECT" (SERIAL) mode.
+
+  On XONE:4D apply following settings:
+  Channel 1, FX1 knob level ==  +6
+  Channel 2, FX1 knob level ==  +6
+  Channel 3, FX1 knob level ==  +6
+  Channel 4, FX1 knob level ==  infinity
+
+  Channel 1, Filter/XFADE   == 1X
+  Channel 2, Filter/XFADE   == 1X
+  Channel 3, Filter/XFADE   == 1X
+  Channel 4, Filter/XFADE   == Y2
+
+  XFADE set ON              == ENABLED
+
+
+  --------  III. USAGE
+  --------------------------------------------------------------------
+  Set crossfader on left side (1X) and play any sound source on CH1..3.
+  When it's playing, enable any effect on FX unit.
+  Slightly move CrossFader to the right (Y2) and you should heard
+  selected effect applied on a source sound.
+
+  diagram: http://shiftedobjectdeposit.pl/technical/xone4d.fx/hybrid.gif
+
+
+  --------  IV.  LIMITATION
+  --------------------------------------------------------------------
+  Filter and LFO effect on a one side for three channels.
+  Instead of using XONE effect, try to map Traktor Pro Filters
+  or use one a FX unit!!!
+
+
+
+
+
+  THE END
+---------------------------------------------------------------------------//
+Shifted Object Deposit, SOD
+“The shift that has been recognised recently in the field of art from
+establishing relations between objects towards establishing relations between
+subjects is not the result of an overnight turn, as it may seem at first sight”
+Blog: http://blog.shiftedobjectdeposit.pl
+
+...................... mixsets ................................................
+- Enigmatic as SOD, Shifted Object Deposit, EXPy: http://i.mixcloud.com/CBvcFV
+
+- The SOD founder Enigmatic Beginning Intro, mix: http://snd.sc/XshR2c
+                                                  http://i.mixcloud.com/CBrKNl
+
+- Enigmatic=Untitled Guy SOD#003 1min video clip: http://vimeo.com/49511555
+                                                  http://youtu.be/5X_PeoQYIXI
+
+- David Late, Untitled SOD#003 rave n8... mixset: http://i.mixcloud.com/CBqDOG
+
+                Conrad SOD#003 rave n8... mixset: http://i.mixcloud.com/CBqALM
+
+          Untitled Guy SOD#003 rave n8... mixset: http://snd.sc/QUl34T
+                                                  http://i.mixcloud.com/CBjwbJ
+
+          Untitled Guy SOD#001 rave n8... mixset: http://snd.sc/Omdy0i
+                                                  http://i.mixcloud.com/CBjwGb
+
+Facebook: http://fb.me/SftObjDep | http://fb.me/ShiftedObjectDeposit
+Beatport: http://btprt.dj/NWRXS6
+RA: http://bit.ly/SOD-ra-DJ
+-------------------------------------------------------------------------------
+Web: http://blog.shiftedobjectdeposit.pl
+-------------------------------------------------------------------------------
+
+Unknown Id or Enigmatic and unnamed SOD founder, also known as Untitled Guy,
+silas [-_-] shiftedobjectdeposit.pl
+
+
